@@ -219,8 +219,8 @@ The goal is to create a neutral, open format for safe API, MCP, and AI-agent exe
 ---
 
 ## Website
-
-[opencontractspec.org](https://opencontractspec.org)
+Developer website with code recipes, playground and demos 
+[supercontracts.dev](https://supercontracts.dev)
 
 ---
 
