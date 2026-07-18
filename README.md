@@ -47,7 +47,137 @@ Agents can touch money, data, code, infrastructure, and customer operations. Wit
 
 ## Use Cases & Code Recipes
 
-TBA
+# SuperContracts MVP Core Capabilities
+
+## Cursor™ MCP Integration & Runtime Evidence
+
+Bring SuperContracts directly into Cursor™ through MCP, enabling developers and AI agents to discover, execute, test, and govern APIs and workflows from the IDE.
+
+Every action captures requests, responses, policy decisions, approvals, actors, timestamps, and execution traces for auditability, compliance, monitoring, and debugging.
+
+### Example 1
+
+Ask Cursor™ to:
+
+```text
+Refund Stripe payment for Order #10482.
+```
+
+SuperContracts executes the workflow, requests approval if needed, performs the refund, and records the complete audit trail.
+
+### Example 2
+
+Ask Cursor™ to:
+
+```text
+Create a new Supabase table for feature flags.
+```
+
+SuperContracts validates the SQL, executes the migration, and records the executed SQL, user, timestamp, and result.
+
+---
+
+## AI Agent Guardrails
+
+Define the systems, tools, data, and actions an AI agent is permitted to access.
+
+These guardrails keep autonomous agents within approved boundaries and prevent unauthorized changes to enterprise systems.
+
+### Example 1
+
+Allow an AI support agent to read Stripe customer and subscription information, but prevent it from issuing refunds.
+
+### Example 2
+
+Allow an AI coding agent to create GitHub branches and pull requests, but prevent it from deploying changes to production.
+
+---
+
+## MCP Tool Safety
+
+Control how AI models interact with Model Context Protocol tools.
+
+SuperContracts acts as a policy-enforcement layer that blocks unauthorized, unsafe, or unverified tool calls before they reach connected systems.
+
+### Example 1
+
+Permit the GitHub MCP server to create branches and pull requests, but block direct pushes to the `main` branch.
+
+### Example 2
+
+Allow the Supabase MCP server to run `SELECT` queries while blocking `DROP TABLE` and unrestricted `DELETE` operations.
+
+---
+
+## Production Action Approval
+
+Add human-in-the-loop controls for destructive, sensitive, or high-impact production actions.
+
+Operations such as database migrations, bulk deletions, refunds, or infrastructure changes cannot proceed without explicit authorization.
+
+### Example 1
+
+Require Finance approval before executing Stripe refunds above `$500`.
+
+### Example 2
+
+Require Database Administrator approval before applying a migration to a production Supabase database.
+
+---
+
+## Slack™ Bot Guardrails
+
+Control what Slack™ bots and AI agents can read, post, approve, and execute from conversations.
+
+SuperContracts can restrict sensitive channels, block unauthorized commands, require approval for high-risk actions, validate the requesting user, and retain evidence of every bot-triggered operation.
+
+### Example 1
+
+An authorized finance user submits:
+
+```text
+/refund ORD-10482
+```
+
+SuperContracts validates the user and starts the Stripe refund workflow.
+
+### Example 2
+
+A user submits:
+
+```text
+/deploy production
+```
+
+SuperContracts requires Release Manager approval before triggering the GitHub Actions deployment.
+
+---
+
+## API Workflow Testing & Execution
+
+Centralize API behavior, dependencies, conditions, tests, and workflow steps in a single executable contract.
+
+This eliminates fragmented scripts and helps multi-step workflows run predictably and consistently.
+
+### Example 1
+
+Test a customer onboarding workflow that:
+
+1. Creates a user in Supabase.
+2. Creates a Stripe subscription.
+3. Sends a welcome email through SendGrid.
+4. Verifies the response from every API.
+
+### Example 2
+
+Execute an order-fulfillment workflow that:
+
+1. Retrieves the order.
+2. Validates inventory.
+3. Charges the customer through Stripe.
+4. Creates the shipment through Shippo.
+5. Updates the order status.
+
 
 ## Implementation
 
