@@ -185,6 +185,8 @@ Open Contract Spec is being implemented in **SuperContracts from [apilabs.ai](ht
 
 SuperContracts turns open contracts into executable API, MCP, and AI-agent workflows with runtime guardrails, approvals, testing, and evidence capture. Further, SuperContracts is deeply integrated via MCP in AI IDE tools like Cursor.
 
+Code Samples (TBA)
+
 ---
 
 ## Status
