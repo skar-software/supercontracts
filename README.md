@@ -7,7 +7,7 @@
 <h1 align="center">SuperContracts</h1>
 
 <p align="center">
-  **Executable contracts and guardrails for APIs, MCPs, and AI agents.**
+  Executable contracts and guardrails for APIs, MCPs, and AI agents.
 </p>
 
 Open Contract Spec defines how software systems should be called, tested, secured, approved, and executed — in a format humans, tools, and AI agents can understand.
