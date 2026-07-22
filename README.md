@@ -53,7 +53,7 @@ Agents can touch money, data, code, infrastructure, and customer operations. Wit
 
 ---
 
-# SuperContracts MVP Core Capabilities - Use Cases & Code Recipes
+# SuperContracts Core Capabilities & Code Recipes
 
 ## Cursor™ MCP Integration & Runtime Evidence
 
